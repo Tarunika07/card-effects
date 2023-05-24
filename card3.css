@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.card{
+    position: relative;
+    width: 500px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(55deg,rgb(245, 143, 143),rgb(170, 170, 170));
+    border-radius: 5%;
+}
+
+img{
+    position: absolute;
+    width: 420px;
+    height: 300px;
+    bottom: -12%;
+    left: 10%;    
+    transition: 0.5s;
+}
+
+.card:hover img{
+    width: 470px;
+    height: 350px;
+    left: 50%;
+}
+
+.content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    text-transform: capitalize;
+    opacity: 0;
+    transition: 0.5s;
+}
+.card:hover .content{
+    left: 5%;
+    opacity: 1;
+}
